@@ -3,7 +3,7 @@
     <b-loading :is-full-page="isFullPage" :active.sync="isLoading"></b-loading>
     <div class="card">
       <div class="card-image">
-        <figure class="image ">
+        <figure class="image">
           <img :src="image" class="img-site" />
         </figure>
       </div>
@@ -11,33 +11,45 @@
         <div class="media">
           <div class="media-content">
             <p class="title is-4">{{ site.title }}</p>
-            <p class="subtitle is-6">{{ firstname }}<br /></p>
+            <p class="subtitle is-6">
+              {{ firstname }}
+              <br />
+            </p>
           </div>
         </div>
 
         <div class="content">
           <span class="site-info">
-            <i class="fas fa-envelope"></i> {{ email }}<br
-          /></span>
-          <span class="site-info">
-            <i class="fas fa-phone"></i> {{ phone }}<br />
+            <i class="fas fa-envelope"></i>
+            {{ email }}
+            <br />
           </span>
           <span class="site-info">
-            <i class="fas fa-map-marker"></i> {{ address.city }}<br
-          /></span>
+            <i class="fas fa-phone"></i>
+            {{ phone }}
+            <br />
+          </span>
+          <span class="site-info">
+            <i class="fas fa-map-marker"></i>
+            {{ address.city }}
+            <br />
+          </span>
 
           <div class="address-block">
-            {{ address.country }} <br />
-            {{ address.street }} <br />
-            {{ address.zipCode }}<br />
+            {{ address.country }}
+            <br />
+            {{ address.street }}
+            <br />
+            {{ address.zipCode }}
+            <br />
           </div>
 
           <time>{{ site.createAt }}</time>
-          <SiteTags :tags="tags"> </SiteTags>
+          <SiteTags :tags="tags"></SiteTags>
         </div>
         <b-button rounded v-on:click="close">
-          <i class="fas fa-angle-left"></i> Back</b-button
-        >
+          <i class="fas fa-angle-left"></i> Back
+        </b-button>
       </div>
     </div>
   </div>

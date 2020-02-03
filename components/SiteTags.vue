@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="field">
-      <b-tag v-for="tag in tags" :key="tag" class="spacing" type="is-primary ">
-        {{ tag }}
-      </b-tag>
+      <b-tag v-for="tag in tags" :key="tag" class="spacing" type="is-primary ">{{ tag }}</b-tag>
     </div>
   </div>
 </template>

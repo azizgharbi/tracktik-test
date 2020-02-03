@@ -11,7 +11,7 @@ import { EventBus } from "./eventBus";
 //Components
 import Sites from "./Sites";
 import SiteDetails from "./SiteDetails";
-//style
+//Style
 import "./../public/css/app.scss";
 
 export default {
