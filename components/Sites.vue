@@ -4,31 +4,20 @@
     <p class="panel-heading">Sites</p>
     <div class="panel-block">
       <div class="control has-icons-left">
-        <div class="columns">
-          <div class="column">
-            <input
-              v-model="searchText"
-              class="input"
-              type="text"
-              placeholder="Search"
-            />
-          </div>
-          <div class="column">
-            <b-button rounded v-on:click="search">Search</b-button>
-          </div>
-        </div>
+        <input
+          v-model="searchText"
+          class="input"
+          type="text"
+          placeholder="Search"
+          v-on:change="search"
+        />
         <span class="icon is-left">
           <i class="fas fa-search" aria-hidden="true"></i>
         </span>
       </div>
     </div>
 
-    <a
-      class="panel-block"
-      v-for="site in data"
-      :key="site.id"
-      v-on:click="showDetails(site.id)"
-    >
+    <a class="panel-block" v-for="site in data" :key="site.id" v-on:click="showDetails(site.id)">
       <span class="panel-icon">
         <i class="fas fa-angle-double-right" aria-hidden="true"></i>
       </span>
@@ -37,9 +26,7 @@
     </a>
 
     <div class="panel-block">
-      <button class="button is-link is-outlined is-fullwidth" v-on:click="add">
-        {{ text }}
-      </button>
+      <button class="button is-link is-outlined is-fullwidth" v-on:click="add">{{ text }}</button>
     </div>
   </div>
 </template>
@@ -60,7 +47,8 @@ export default {
       searchText: "",
       text: "show more",
       isLoading: false,
-      isFullPage: true
+      isFullPage: true,
+      timOut: null
     };
   },
   watch: {
@@ -82,12 +70,19 @@ export default {
       this.count += 3;
     },
     search: function() {
+      clearTimeout(this.timeOut);
+
       const filtredData = this.data.filter(
         ({ title }) =>
-          title.toLowerCase().search(this.searchText.toLowerCase()) > 0
+          title.toLowerCase().indexOf(this.searchText.toLowerCase()) > -1
       );
+      this.timOut = setTimeout(() => {
+        if (filtredData.length > 0) {
+          this.data = filtredData;
+        }
+      }, 400);
+
       if (filtredData.length > 0) {
-        this.data = filtredData;
         this.text = "Back home";
       } else {
         this.$buefy.toast.open(`${this.searchText} not found`);
