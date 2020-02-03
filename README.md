@@ -41,6 +41,10 @@ Aziz Gharbi.
 
 - without vue-router we don't for example have the ability to send a specific link for a site details.
 
+## Problems:
+
+- Sometimes the Api don't return the images. as you see in the first screen.
+
 ## Nice to have:
 
 - Typescript.
@@ -49,7 +53,7 @@ Aziz Gharbi.
 
 - I really enjoied the test: build with love for javascript, And i am looking forward to seeing you, your feedback are reaaly welcome.
 
-## Demo
+## Screenshot:
 
 ![home](img/home.png)
 
