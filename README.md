@@ -58,4 +58,6 @@ Aziz Gharbi.
 
 ![home](img/home.png)
 
+![home2](img/home2.png)
+
 ![details](img/details.png)
