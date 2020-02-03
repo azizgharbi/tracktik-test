@@ -17,6 +17,8 @@ export function getSiteWithId(id) {
   return getData(`https://tracktik-challenge.staffr.com/sites/${id}`);
 }
 
+// seach for sites
+
 export async function searchForSite(text, counter) {
   const data = await getData(`https://tracktik-challenge.staffr.com/sites`);
   return data
