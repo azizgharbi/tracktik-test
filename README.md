@@ -48,6 +48,7 @@ Aziz Gharbi.
 ## Nice to have:
 
 - Typescript.
+- [vue-styled-components](https://github.com/styled-components/vue-styled-components) to avoid overriding css classes.
 
 ### Finally:
 
