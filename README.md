@@ -54,7 +54,7 @@ Aziz Gharbi.
 
 - I really enjoied the test: build with love for javascript, And i am looking forward to seeing you, your feedback are reaaly welcome.
 
-## Screenshot:
+## Screenshots:
 
 ![home](img/home.png)
 
