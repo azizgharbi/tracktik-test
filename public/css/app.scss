@@ -1,0 +1,35 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+}
+
+.img-rounded {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.spacing {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.address-block {
+  margin-left: 16px;
+}
+.card-image {
+  .image {
+    .img-site {
+      max-height: 400px;
+    }
+  }
+}
+.content {
+  .site-info {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
