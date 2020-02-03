@@ -45,12 +45,12 @@ Aziz Gharbi.
 
 - Typescript.
 
+### Finally:
+
+- I really enjoied the test: build with love for javascript, And i am looking forward to seeing you, your feedback are reaaly welcome.
+
 ## Demo
 
 ![home](img/home.png)
 
 ![details](img/details.png)
-
-### Finally:
-
-- I really enjoied the test: build with love for javascript, And i am looking forward to seeing you, your feedback are reaaly welcome.
