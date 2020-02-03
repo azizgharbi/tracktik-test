@@ -53,7 +53,7 @@ Aziz Gharbi.
 
 ### Finally:
 
-- I really enjoied the test: build with love for javascript, And i am looking forward to seeing you, your feedback are reaaly welcome.
+- I really enjoyed the test: build with love for javascript, And i am looking forward to seeing you, your feedback are welcome.
 
 ## Screenshots:
 
