@@ -44,7 +44,7 @@ Aziz Gharbi.
 
 ## Problems:
 
-- Sometimes the Api don't return the images. as you see in the first screen.
+- Sometimes the Api doesn't return the images. as you see in the first screen.
 
 ## Nice to have:
 
