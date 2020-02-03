@@ -20,7 +20,7 @@ Aziz Gharbi.
 - I am using `Live server` extension on vs code to browse the html file and for hot reload.
 - You can run `npm install` to install packages.
 - You can run `npm run watch` to start webpack watcher.
-- You can run `npm run build` to build.
+- You can run `npm run dev` to build, or `npm run prod`.
 - You can open the `index.html` directly to see the demo.
 
 ### ps:
@@ -40,6 +40,7 @@ Aziz Gharbi.
 ## Cons:
 
 - without vue-router we don't for example have the ability to send a specific link for a site details.
+- without vue cli and it's awesome webpack pre-config, code splitting, typescript and more ...
 
 ## Problems:
 
