@@ -16,3 +16,15 @@ export async function getSites(counter) {
 export function getSiteWithId(id) {
   return getData(`https://tracktik-challenge.staffr.com/sites/${id}`);
 }
+
+export async function searchForSite(text, counter) {
+  const data = await getData(`https://tracktik-challenge.staffr.com/sites`);
+  return data
+    .slice(0, counter)
+    .map(({ title, images, id }) => ({
+      title,
+      images,
+      id
+    }))
+    .filter(({ title }) => title.toLowerCase().indexOf(text.toLowerCase()) > -1);
+}

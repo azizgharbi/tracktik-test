@@ -35,7 +35,7 @@
 //Event
 import { EventBus } from "./eventBus";
 //Services
-import { getSites } from "../services/services";
+import { getSites, searchForSite } from "../services/services";
 
 export default {
   name: "Sites",
@@ -47,8 +47,7 @@ export default {
       searchText: "",
       text: "show more",
       isLoading: false,
-      isFullPage: true,
-      timOut: null
+      isFullPage: true
     };
   },
   watch: {
@@ -70,23 +69,14 @@ export default {
       this.count += 3;
     },
     search: function() {
-      clearTimeout(this.timeOut);
-
-      const filtredData = this.data.filter(
-        ({ title }) =>
-          title.toLowerCase().indexOf(this.searchText.toLowerCase()) > -1
-      );
-      this.timOut = setTimeout(() => {
-        if (filtredData.length > 0) {
-          this.data = filtredData;
+      searchForSite(this.searchText, this.count).then(data => {
+        if (data.length > 0) {
+          this.data = data;
+          this.text = "Back home";
+        } else {
+          this.$buefy.toast.open(`${this.searchText} not found`);
         }
-      }, 400);
-
-      if (filtredData.length > 0) {
-        this.text = "Back home";
-      } else {
-        this.$buefy.toast.open(`${this.searchText} not found`);
-      }
+      });
     }
   },
   created() {
