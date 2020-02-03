@@ -23,6 +23,10 @@ Aziz Gharbi.
 - You can run `npm run build` to build.
 - You can open the `index.html` directly to see the demo.
 
+### ps:
+
+- To use the search type your text then press enter.
+
 ## Technologies:
 
 - [buefy](https://buefy.org/) (ui framework for vue js based on bluma css).
