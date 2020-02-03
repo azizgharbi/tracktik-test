@@ -27,7 +27,7 @@ Aziz Gharbi
 
 ## Why
 
-`I used only vuejs and webpack to generate the full application. because i didn't find the need to use (vuex and vue router for only two screens), basically : vuejs + customized webpack config`
+`I used only vuejs and webpack to generate the full application. because i didn't find the need to use (vue-cli,vuex,vue-router for only two screens), basically : vuejs + customized webpack config`
 
 ## Demo
 
